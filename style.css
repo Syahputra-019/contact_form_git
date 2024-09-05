@@ -59,6 +59,22 @@ body {
     text-align: center;
 }
 
+/* Styling untuk ikon sosial media */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+
 /* Form styling */
 .form-group {
     margin-bottom: 1.5rem;
