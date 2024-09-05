@@ -1,0 +1,90 @@
+/* body style */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contact form container */
+.contact-form-container {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 5rem;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Submit button styling */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Alert messages (can be added dynamically) */
+.alert {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
