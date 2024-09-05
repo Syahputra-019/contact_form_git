@@ -1,31 +1,62 @@
 /* body style */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('image/background.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
 }
 
-/* Container styling */
-.container {
+/* Main wrapper to split screen */
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left and right section split */
+.left-section, .right-section {
+    width: 50%;
+    height: 100vh;
+}
+
+/* Left section with background image */
+.left-section {
+    background-image: url('image/Background.gif');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+}
+
+/* Right section with solid color */
+.right-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
 }
 
 /* Contact form container */
 .contact-form-container {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2);
     width: 100%;
-    max-width: 600px;
-    margin-top: 5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Tambahan untuk styling h2 */
+.contact-form-container h2 {
+    margin: 0;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 /* Form styling */
@@ -44,7 +75,6 @@ body {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
 }
 
@@ -70,7 +100,7 @@ textarea.form-control {
     background-color: #0056b3;
 }
 
-/* Alert messages (can be added dynamically) */
+/* Alert messages*/
 .alert {
     margin-top: 1rem;
     padding: 0.75rem;
@@ -87,4 +117,16 @@ textarea.form-control {
 .alert-danger {
     background-color: #dc3545;
     color: #fff;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .left-section, .right-section {
+        width: 100%;
+        height: 50%;
+    }
+
+    .contact-form-container {
+        max-width: 100%;
+    }
 }
